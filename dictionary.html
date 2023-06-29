@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dictionary Web App</title>
+    <link rel="stylesheet" href="dictionary.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+
+    <audio src="" id="sound"></audio>
+
+    <div class="container">
+        <div class="search-box">
+            <input type="search" name="" id="inp-word" placeholder="Enter Word to search">
+            <input type="button" value="Search" id="search-btn">
+        </div>
+
+        <div class="result hide" id="result">
+            <div class="word">
+                <h3 id="searchword"></h3>
+                <button id="play">
+                    <i class="fa-solid fa-volume-high"></i>
+                </button>
+            </div>
+
+            <div class="details">
+                <p id="noun"></p>
+                <span>/</span>
+                <p id="verb"></p>
+            </div>
+            <div class="word-meaning">
+                <p id="nounh"></p>
+                <span id="noun-meaning"></span>
+                <p id="verbh"></p>
+                <span id="verb-meaning"></span>
+            </div>
+            <div class="word-example" id="word-example">
+
+            </div>
+        </div>
+        <div class="error-section hide" id="error-section">
+            <div id="error-message">error</div>
+            <div id="solution">solution</div>
+        </div>
+
+    </div>
+
+
+
+    <script src="./dictionary.js"></script>
+</body>
+
+</html>
